@@ -6,7 +6,7 @@ imageformats\qjpeg.dll, 5.8, 167e37765acb562f77fd15af817023f3
 Qt5Xml.dll, 5.8, 5cad2c38d2f8fa34a2a368fc8c1af038
 libgcc_s_seh-1.dll, 5.8, bc56b1be3281a6f34bfe561631727ee9
 libwinpthread-1.dll, 5.8, fbad378d6bbab79b1d4670bab8c62cad
-YUView.exe, 1514f07b4201d171d3c672dd47b79f9be8a11ccc, b5e246212a2f6e4ce318d2d04f8b6123
+YUView.exe, 1514f07b4201d171d3c672dd47b79f9be8a11ccc, ecff4c4abd633e5da5257830ecbfcb12
 imageformats\qicns.dll, 5.8, dfc3128239816abbba76adcabd2662d1
 imageformats\qtiff.dll, 5.8, d3550b52263b238814b204a6d9ba5a1b
 libstdc++-6.dll, 5.8, 739c94335412b09bd0a3794e987a1da9
