@@ -1,13 +1,14 @@
-Last Commit: 1.0-1005-ga72d346
-Last Commit Hash: a72d346e7c160aa766f6f20247d3e4768a46e167
-Last Commit Hash Short: a72d346
+Last Commit: 1.0-1006-g1e347d7
+Last Commit Hash: 1e347d7ac2ddcae5361a07116ae52138420e24be
+Last Commit Hash Short: 1e347d7
 zlib1.dll, 5.8, 12a1924393844d1442e2bc45312cdce7
 imageformats\qjpeg.dll, 5.8, 167e37765acb562f77fd15af817023f3
 Qt5Xml.dll, 5.8, 5cad2c38d2f8fa34a2a368fc8c1af038
 libgcc_s_seh-1.dll, 5.8, bc56b1be3281a6f34bfe561631727ee9
+libeay32.dll, 5.8, a9c09c7b39ee0641f26b9543629a9dfa
 libwinpthread-1.dll, 5.8, fbad378d6bbab79b1d4670bab8c62cad
 LICENSE.GPL3, 5.8, 7a2acf8024b2772c798974c03e2a4171
-YUView.exe, a72d346e7c160aa766f6f20247d3e4768a46e167, 028471abce24f6e1dd9cb5f3e12b9183
+YUView.exe, 1e347d7ac2ddcae5361a07116ae52138420e24be, 24efb74e68d8165a2481ef53252d9d22
 imageformats\qicns.dll, 5.8, dfc3128239816abbba76adcabd2662d1
 imageformats\qtiff.dll, 5.8, d3550b52263b238814b204a6d9ba5a1b
 libstdc++-6.dll, 5.8, 739c94335412b09bd0a3794e987a1da9
@@ -17,6 +18,7 @@ imageformats\qwbmp.dll, 5.8, 2a6f20e020a54cf16e31b58a766b747e
 libde265\LICENCE.txt, 5.8, 127a6885dbfe4ec514c936b705a0abdf
 imageformats\qtga.dll, 5.8, 24852a230142611e5c023fd3feb2e809
 bearer\qnativewifibearer.dll, 5.8, 79995726448dbb5761fe30efab4855cf
+ssleay32.dll, 5.8, 95867d9c5f416284a68a0e3f385f8540
 bearer\qgenericbearer.dll, 5.8, c28b7321f563187e253707f3e73b433f
 imageformats\qwebp.dll, 5.8, 470f89ed514f6501f222e0fb0a3b4c88
 libgomp-1.dll, 5.8, b8271410048f4abd4885ee6e23e0e92b
