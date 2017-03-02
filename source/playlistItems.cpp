@@ -27,6 +27,7 @@ namespace playlistItems
 
     playlistItemRawFile::getSupportedFileExtensions(allExtensions, filtersList);
     playlistItemHEVCFile::getSupportedFileExtensions(allExtensions, filtersList);
+    playlistItemFFMPEGFile::getSupportedFileExtensions(allExtensions, filtersList);
     playlistItemImageFile::getSupportedFileExtensions(allExtensions, filtersList);
     playlistItemStatisticsFile::getSupportedFileExtensions(allExtensions, filtersList);
 
@@ -46,6 +47,32 @@ namespace playlistItems
 
     filters.append(allFiles);
     filters.append(filtersList);
+    filters.append("Any files (*)");
+    return filters;
+  }
+
+  QStringList getSupportedNameFilters()
+  {
+    QStringList allExtensions, filtersList;
+
+    playlistItemRawFile::getSupportedFileExtensions(allExtensions, filtersList);
+    playlistItemHEVCFile::getSupportedFileExtensions(allExtensions, filtersList);
+    playlistItemFFMPEGFile::getSupportedFileExtensions(allExtensions, filtersList);
+    playlistItemImageFile::getSupportedFileExtensions(allExtensions, filtersList);
+    playlistItemStatisticsFile::getSupportedFileExtensions(allExtensions, filtersList);
+
+    // Append the filter for playlist files
+      allExtensions.append("yuvplaylist");
+    filtersList.append("YUView playlist file (*.yuvplaylist)");
+
+    // Now build the list of name filters
+    QStringList nameFilters;
+    for (auto extension : allExtensions)
+    {
+      nameFilters.append(QString("*.") + extension);
+    }
+
+    return nameFilters;
   }
 
   playlistItem *createPlaylistItemFromFile(QString fileName)
@@ -74,6 +101,18 @@ namespace playlistItems
       {
         playlistItemHEVCFile *newRawFile = new playlistItemHEVCFile(fileName);
         return newRawFile;
+      }
+    }
+
+    // Check playlistItemFFMPEGFile
+    {
+      QStringList allExtensions, filtersList;
+      playlistItemFFMPEGFile::getSupportedFileExtensions(allExtensions, filtersList);
+
+      if (allExtensions.contains(ext))
+      {
+        playlistItemFFMPEGFile *newFFMPEGFile = new playlistItemFFMPEGFile(fileName);
+        return newFFMPEGFile;
       }
     }
 
